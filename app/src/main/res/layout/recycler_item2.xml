@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/simg01"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="종합학원"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF333333"
+            android:layout_toRightOf="@id/iv_icon2"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:id="@+id/tv_msg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고등학생 전과목 모집"
+            android:layout_below="@id/tv_name2"
+            android:layout_alignLeft="@id/tv_name2"/>
+
+        <ImageView
+            android:id="@+id/iv_img2"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@id/tv_msg2"
+            android:src="@drawable/simg02"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="4dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
