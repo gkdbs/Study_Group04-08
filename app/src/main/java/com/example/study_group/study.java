@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class study extends AppCompatActivity {
 
     ArrayList<Item2> items2= new ArrayList<>();
-    RecyclerView recyclerView;
-    MyAdapter2 adapter;
+    RecyclerView recyclerView2;
+    MyAdapter2 adapter2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +30,9 @@ public class study extends AppCompatActivity {
         items2.add( new Item2("해냄학원","해냄학원", R.drawable.study05, R.drawable.simg01)  );
         items2.add( new Item2("늘푸른학원","늘푸른학원", R.drawable.study06, R.drawable.simg06)  );
 
-        recyclerView= findViewById(R.id.recycler2);
-        adapter= new MyAdapter2(this, items2);
-        recyclerView.setAdapter(adapter);
+        recyclerView2= findViewById(R.id.recycler2);
+        adapter2= new MyAdapter2(study.this, items2);
+        recyclerView2.setAdapter(adapter2);
 
         //리사이클러뷰는 리스트뷰와 다르게 아이템클릭 리스너가 없음.
         //아답터에서 itemView 에 직접 클릭리스너 설정해 주어야 함.
@@ -51,8 +51,8 @@ public class study extends AppCompatActivity {
 
         //보통 새로 추가된 아이템은 첫번째(index:0)로 추가되는 경우가 더 많음[최신순]
         items2.add( 0, new Item2("NEW","MESSAGE", R.drawable.study06, R.drawable.simg06)  );
-        adapter.notifyItemInserted(0);
-        recyclerView.scrollToPosition(0);
+        adapter2.notifyItemInserted(0);
+        recyclerView2.scrollToPosition(0);
     }
 
     public void clickDel(View view) {
@@ -60,17 +60,17 @@ public class study extends AppCompatActivity {
 
         //리사이클러뷰의 아이템뷰를 삭제하는 것이 아니라. ArrayList 의 요소제거
         items2.remove(0);
-        adapter.notifyItemRemoved(0);
+        adapter2.notifyItemRemoved(0);
     }
 
     public void clickLinear(View view) {
         //리사이클러뷰의 배치관리자(LayoutManager) 변경하기
         LinearLayoutManager layoutManager= new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerView2.setLayoutManager(layoutManager);
     }
 
     public void clickGrid(View view) {
         GridLayoutManager layoutManager= new GridLayoutManager(this, 2);//2칸짜리 격자배치
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerView2.setLayoutManager(layoutManager);
     }
 }

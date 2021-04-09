@@ -30,7 +30,7 @@ public class art extends AppCompatActivity {
         items.add( new Item("미술학원","미술학원", R.drawable.art06, R.drawable.img06)  );
 
         recyclerView= findViewById(R.id.recycler);
-        adapter= new MyAdapater(this, items);
+        adapter= new MyAdapater(art.this, items);
         recyclerView.setAdapter(adapter);
 
         //리사이클러뷰는 리스트뷰와 다르게 아이템클릭 리스너가 없음.
