@@ -75,10 +75,10 @@ public class MyAdapater extends RecyclerView.Adapter {
         public VH(@NonNull View itemView) {
             super(itemView);
 
-            ivIcon= itemView.findViewById(R.id.iv_icon2);
-            tvName= itemView.findViewById(R.id.tv_name2);
-            tvMsg= itemView.findViewById(R.id.tv_msg2);
-            ivImg= itemView.findViewById(R.id.iv_img2);
+            ivIcon= itemView.findViewById(R.id.iv_icon);
+            tvName= itemView.findViewById(R.id.tv_name);
+            tvMsg= itemView.findViewById(R.id.tv_msg);
+            ivImg= itemView.findViewById(R.id.iv_img);
 
             //아이템뷰를 클릭했을 때..
             itemView.setOnClickListener(new View.OnClickListener() {

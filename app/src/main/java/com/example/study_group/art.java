@@ -22,12 +22,12 @@ public class art extends AppCompatActivity {
         setContentView(R.layout.activity_art);
 
         //대량의 데이터 추가 [실무에서는 DB or Network 서버에서 데이터를 읽어옴]
-        items.add( new Item("미술학원","미술학원", R.drawable.art01, R.drawable.img02)  );
-        items.add( new Item("미술학원","미술학원", R.drawable.art02, R.drawable.img03)  );
+        items.add( new Item("요리학원","요리학원", R.drawable.art01, R.drawable.img02)  );
+        items.add( new Item("체스학원","체스학원", R.drawable.art02, R.drawable.img03)  );
         items.add( new Item("미술학원","미술학원", R.drawable.art03, R.drawable.img04)  );
         items.add( new Item("미술학원","미술학원", R.drawable.art04, R.drawable.img05)  );
         items.add( new Item("미술학원","미술학원", R.drawable.art05, R.drawable.img01)  );
-        items.add( new Item("미술학원","미술학원", R.drawable.art06, R.drawable.img06)  );
+        items.add( new Item("음악학원","음악학원", R.drawable.art06, R.drawable.img06)  );
 
         recyclerView= findViewById(R.id.recycler);
         adapter= new MyAdapater(art.this, items);
