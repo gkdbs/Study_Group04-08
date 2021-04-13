@@ -21,8 +21,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     NavigationView navigationView;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
@@ -134,5 +132,7 @@ public class MainActivity extends AppCompatActivity {
         activity.startActivity(intent);
     }
 
-
+    public void clickplace(View view) {
+        startActivity( new Intent(this, com.example.study_group.art.class) );
+    }
 }

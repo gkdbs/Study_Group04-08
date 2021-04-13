@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Study_Group"
         android:usesCleartextTraffic="true">
-        <activity android:name=".study"></activity>
+        <activity android:name=".Kakaomaps"></activity>
+        <activity android:name=".SQL" />
+        <activity android:name=".study" />
         <activity android:name=".DetailActivity2" />
         <activity android:name=".art" />
         <activity android:name=".MyNestAdapter" />

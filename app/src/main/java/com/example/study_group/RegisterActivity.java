@@ -128,6 +128,8 @@ public class RegisterActivity extends AppCompatActivity {
                 queue.add(registerRequest);
             }
         });
+
     }
+
 
 }
