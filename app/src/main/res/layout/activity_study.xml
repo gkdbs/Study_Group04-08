@@ -35,6 +35,14 @@
                     android:text="Grid"
                     android:layout_margin="4dp"
                     android:onClick="clickGrid"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="다른학원 찾아보기"
+                    android:backgroundTint="#F2CB61"
+                    android:textStyle="bold"
+                    android:layout_margin="4dp"
+                    android:onClick="click_findSG"/>
 
             </LinearLayout>
 

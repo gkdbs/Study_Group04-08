@@ -133,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickplace(View view) {
-        startActivity( new Intent(this, com.example.study_group.art.class) );
+        startActivity( new Intent(this,  com.example.study_group.KaKaoMap.class) );
     }
+
+
 }

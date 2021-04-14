@@ -1,3 +1,5 @@
+package com.example.study_group;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -10,23 +12,14 @@ import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
 import net.daum.mf.map.api.MapView;
 
-public class Kakaomaps extends AppCompatActivity {
+public class KaKaoMap extends AppCompatActivity {
 
-    //카카오지도는 실제 디바이스에서만 동작함. 에뮬레이터에는 동작하지 않음-에러 ///
-
-    // Kakao 지도 API 라이브러리는 Gradle 방식이 아니어서
-    // build.gradle 을 이용하여 자동 다운로드 되는 방식을 사용할 수 없음!
-    // 지도 라이브러리 클래스들을 압축문서(.jar)로 만들어서 제공함.
-    // 프로젝트의 적절한 위치에 복사하고..복사한 이 라이브러리를 프로젝트에서 인식하도록 연결!!
-
-    //카카오 지도뷰 객체 참조변수
     MapView mapView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Kakaomap);
+        setContentView(R.layout.activity_ka_kao_map);
 
         //키 해시값 얻어오는 기능메소드 호출 (Utility클래스 - kakao라이브러리에 있는)
         String keyHash= Utility.getKeyHash(this);
@@ -67,8 +60,6 @@ public class Kakaomaps extends AppCompatActivity {
         marker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin); // 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양.
 
         mapView.addPOIItem(marker);
-
-
 
     }
 }

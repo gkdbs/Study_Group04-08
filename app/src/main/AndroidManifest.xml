@@ -14,12 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Study_Group"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Kakaomaps"></activity>
-        <activity android:name=".SQL" />
+        <activity android:name=".openApi"></activity>
+        <activity android:name=".KaKaoMap" />
         <activity android:name=".study" />
         <activity android:name=".DetailActivity2" />
         <activity android:name=".art" />
-        <activity android:name=".MyNestAdapter" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".nav_mail" />
         <activity android:name=".nav_setting" />
@@ -30,10 +29,8 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".SubActivity" />
         <activity android:name=".login" />
-        <activity android:name=".Study" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Searchbtn" />
-        <activity android:name=".KakaoMap" />
         <activity android:name=".MainActivity" />
         <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity" />
         <activity android:name=".intro">
@@ -56,6 +53,7 @@
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="97b72477aa8435863225005bfdb42510" />
+
     </application>
 
 </manifest>

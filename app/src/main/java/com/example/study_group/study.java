@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -72,5 +73,8 @@ public class study extends AppCompatActivity {
     public void clickGrid(View view) {
         GridLayoutManager layoutManager= new GridLayoutManager(this, 2);//2칸짜리 격자배치
         recyclerView2.setLayoutManager(layoutManager);
+    }
+    public void click_findSG(View view) {
+        startActivity( new Intent(this,  com.example.study_group.openApi.class) );
     }
 }
